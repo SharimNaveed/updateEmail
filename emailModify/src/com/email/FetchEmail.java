@@ -55,13 +55,13 @@ public class FetchEmail extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("<html> <body> <form action=# method=POST>");
 		out.println("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">");
-		out.println(successMessage + "<div class=\"starter-template\">");
+		out.println("<div class=\"container\"><div class=\"starter-template\">");
 		out.println(request.getParameter("mobile"));
 		out.println("<h1>Your Registered Email is " + email + "</h1>");
 		out.println("<h2> If you want to change email Enter email in text box and click on submit button</h1>");
 		out.println("Email : <input type=textbox name=email> ");
 		out.println("<button type=\"submit\" class=\"btn btn-primary\">Submit</button>");
-		out.println("</div></form></body></html>");
+		out.println("</div></div></form></body></html>");
 	}
 
 	/**
